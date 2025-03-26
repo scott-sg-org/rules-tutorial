@@ -1,0 +1,12 @@
+rules:
+  - id: simple-pattern-008-open-read-only-with-write
+    languages:
+      - python
+    severity: ERROR
+    message: This example finds calls to open() a file read-only followed by calls
+      to write() to that file
+    pattern: "$FD = open(...,'r',...)\r
+
+      ...\r
+
+      $FD.write(...)"

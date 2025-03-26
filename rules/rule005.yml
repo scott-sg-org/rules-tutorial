@@ -1,0 +1,7 @@
+rules:
+  - id: simple-pattern-005-parameter-wildcards
+    languages:
+      - python
+    severity: ERROR
+    message: This example looks for calls to open() with the parameter 'r'
+    pattern: open(...,'r',...)

@@ -1,0 +1,8 @@
+rules:
+  - id: simple-pattern-009-call-open-with-name-rw-wc
+    languages:
+      - python
+    severity: ERROR
+    message: This example finds calls to open() with filename, rw, and wildcards the
+      rest
+    pattern: open($FILENAME, $RW, ...)

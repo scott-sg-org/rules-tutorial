@@ -1,0 +1,9 @@
+rules:
+  - id: simple-pattern-007-fix-func-def-with-any
+    languages:
+      - python
+    severity: ERROR
+    message: This example finds function defs for get_user()
+      to write() to that file
+    pattern: "def get_user():\r\n    ..."
+

@@ -1,0 +1,7 @@
+rules:
+  - id: simple-pattern-010-call-requests-get-with-timeout-and-verify
+    languages:
+      - python
+    severity: ERROR
+    message: This example finds calls to requests.get() with timeout and verify=True
+    pattern: requests.get("...",timeout=$SEC,verify=True)

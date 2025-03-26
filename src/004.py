@@ -1,0 +1,6 @@
+print("first line")
+print("hello")
+print("you")
+print("wonderful")
+print("world")
+print(".")

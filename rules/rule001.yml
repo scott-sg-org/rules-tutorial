@@ -1,0 +1,7 @@
+rules:
+  - id: simple-hello-rule-001
+    languages:
+      - python
+    severity: ERROR
+    message: simplest pattern rule, should match in 001.py
+    pattern: print('Hello, World!')

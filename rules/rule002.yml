@@ -1,0 +1,7 @@
+rules:
+  - id: simple-pattern-002-parameter-wildcard
+    languages:
+      - python
+    severity: ERROR
+    message: This example looks for calls to logging.info(get_user()) with any user id
+    pattern: logging.info(get_user(...) + " logged in")

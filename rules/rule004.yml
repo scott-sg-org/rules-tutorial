@@ -1,0 +1,11 @@
+rules:
+  - id: simple-pattern-004-line-wildcard
+    languages:
+      - python
+    severity: ERROR
+    message: This example looks for calls to print("you") followed by calls to print("world")
+    pattern: "print(\"you\")\r
+
+      ...\r
+
+      print(\"world\")"

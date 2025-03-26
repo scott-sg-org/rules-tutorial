@@ -1,0 +1,28 @@
+rules:
+  - id: simple-patter-006-functions-last-call-request-get-post
+    languages:
+      - python
+    severity: ERROR
+    message: This example finds functions where the last call is to requests.get() or requests.post()
+      print("world")
+    patterns:
+      - pattern-either:
+          - pattern: "def $FUNC(...):\r
+
+              \    ...\r
+
+              \    requests.get(...)"
+          - pattern: "def $FUNC(...):\r
+
+              \    ...\r
+
+              \    requests.post(...)"
+      - pattern-not: "def $FUNC(...):\r
+
+          \    ...\r
+
+          \    requests.post(...)\r
+
+          \    ...\r
+
+          \    $OTHER(...)"
